@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(at 0% 0%, black, #1F2833, #45A29E);
+    max-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    color: rgba(255, 251, 244, 0.95);
+    font-family: "Montserrat", sans-serif;
+    font-size:75px;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.2em;
+}
+
+.half-screen {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+
+.video-holder {
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 620px;
+    height: 350px;
+    float: right;
+}
+
+.file-uplaod {
+    float: none;
+    margin-left: 100%;
+    margin-right: 320px;
+}
+
+.pretty-upload {
+    position: absolute;
+    margin-top: 380px;
+    font-family: "Catamaran", sans-serif;
+    font-size: 19px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color: #ffffff;
+    border: 0px solid;
+    background-color: rgba(255, 251, 244, 0.5);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.pretty-upload:hover {
+    background-color: rgba(255, 251, 244, 0.75);
+}
+
+.pretty-upload:focus {
+    outline: none;
+}
+
+.custom-select {
+    position: relative;
+    font-family: "Catamaran", sans-serif;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: rgba(255, 251, 244, 0.75);
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 10px;
+}
+
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    background-color: rgba(255, 251, 244, 0.75);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#base-file {
+    position: absolute;
+    margin-top: 380px;
+    left: 8.2%;
+    opacity: 0;
+}
+
+#compare-file {
+    position: absolute;
+    margin-top: 380px;
+    right: 4%;
+    opacity: 0;
+}
+
+#submit {
+    position: absolute;
+    display: block;
+    margin-top: 450px;
+    left: 86.6%;
+}
